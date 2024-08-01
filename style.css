@@ -174,6 +174,9 @@ header img {
   padding-top: 90px;
   font-family: "poppins", sans-serif;
   font-size: 40px;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 25% cover 50%;
 }
 
 .ctn-about {
@@ -185,25 +188,23 @@ header img {
   justify-content: space-around;
 }
 
-.card-1,
-.card-2 {
-  position: relative;
+.card-1 {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
 
-.card-2-title,
 .card-1-title {
   font-size: 25px;
   margin-bottom: 20px;
   font-weight: 700;
 }
 
-.card-2-Subtitle,
 .card-1-Subtitle {
   font-size: 15px;
   font-weight: 400;
 }
 
-.card-2 ul,
 .card-1 ul {
   width: 660px;
   list-style: none;
@@ -236,5 +237,16 @@ header img {
 @keyframes showDown {
   100% {
     height: 0;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.8;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
   }
 }
