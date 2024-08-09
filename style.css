@@ -268,7 +268,17 @@ nav ul li a:hover::after,
   font-size: 50px;
   font-family: "poppins";
   text-align: center;
-  margin-bottom: 140px;
+  animation: muncul linear;
+  animation-timeline: view();
+  animation-range: entry 10% cover 30%;
+}
+
+.see-detail-project {
+  font-size: 20px;
+  font-family: "poppins";
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 120px;
   animation: muncul linear;
   animation-timeline: view();
   animation-range: entry 10% cover 30%;
@@ -303,6 +313,10 @@ nav ul li a:hover::after,
   animation: muncul linear;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
+}
+
+.Project a {
+  text-decoration: none;
 }
 
 .card-1 h3,
@@ -344,6 +358,11 @@ nav ul li a:hover::after,
   .title-card-2 {
     margin-top: 10px;
   }
+}
+
+.btn-project-detail {
+  display: flex;
+  justify-content: center;
 }
 
 /* keyframes settings */
