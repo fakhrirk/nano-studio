@@ -148,6 +148,7 @@ nav ul li a:hover::after,
   padding: 23px;
   margin: auto 13px;
   margin-top: 40px;
+  align-items: last baseline;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: left;
@@ -214,6 +215,8 @@ nav ul li a:hover::after,
   width: 100vw;
   height: 20%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px 10px;
   background-color: #2d88f2;
 }
@@ -232,7 +235,6 @@ nav ul li a:hover::after,
   font-size: 30px;
   font-weight: 700;
   color: #fff;
-  justify-content: center;
   animation: fadeInLeft linear;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
@@ -241,7 +243,7 @@ nav ul li a:hover::after,
 .aboutUs-logo {
   display: flex;
   align-items: center;
-  margin: 0 180px;
+  margin: 0 200px;
   animation: fadeInLeft linear;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
@@ -362,6 +364,69 @@ nav ul li a:hover::after,
 .btn-project-detail {
   display: flex;
   justify-content: center;
+}
+
+.developers {
+  text-align: center;
+}
+
+.developers h2 {
+  font-size: 50px;
+  margin-bottom: 100px;
+}
+
+.dev-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.dev-card {
+  background: white;
+  padding: 20px;
+  margin: 20px 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  border: #2d88f2 0.3px solid;
+}
+
+.dev-img {
+  width: 80px;
+  height: 80px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 auto -70px;
+  position: relative;
+  top: -60px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.dev-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dev-card h3 {
+  margin-top: 40px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.dev-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0 20px;
+}
+
+.dev-card h4 {
+  font-size: 1em;
+  color: #008cba;
+  font-weight: normal;
 }
 
 /* keyframes settings */
