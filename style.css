@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 header {
   width: 85%;
   height: 10%;
-  margin: 30px auto;
+  margin: 20px auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,12 +21,15 @@ header {
   padding: 15px;
 }
 
-.logo-nano{
-  width: 110px;
+.logo-nano {
+  width: 140px;
   cursor: pointer;
   color: white;
   animation: fadeInDown 1.2s ease-in-out;
+}
 
+.active {
+  font-weight: 600;
 }
 
 nav ul {
@@ -46,16 +49,18 @@ nav ul li a {
   transition: color 0.5s ease-in-out;
 }
 
-nav ul li a:hover, .active {
-  color: #2D88F2;
+nav ul li a:hover,
+.active {
+  color: #2d88f2;
 }
 
-nav ul li a:hover::after, .active::after {
-  content: '';
+nav ul li a:hover::after,
+.active::after {
+  content: "";
   display: block;
   width: 100%;
   height: 2px;
-  background: #2D88F2;
+  background: #2d88f2;
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -64,17 +69,16 @@ nav ul li a:hover::after, .active::after {
 
 .contact-btn {
   text-decoration: none;
-  padding: 10px 20px;
-  border: #2D88F2 solid 1px;
-  color: #2D88F2;
+  padding: 10px 30px;
+  border: #2d88f2 solid 1px;
+  color: #2d88f2;
   border-radius: 5px;
   transition: background-color 0.5s ease-in-out;
   animation: fadeInDown 1.2s ease-in-out;
-
 }
 
 .contact-btn:hover {
-  background-color: #2D88F2;
+  background-color: #2d88f2;
   color: white;
 }
 
@@ -121,13 +125,13 @@ nav ul li a:hover::after, .active::after {
   animation: fadeInRight 1.2s ease-in-out;
 }
 
-.service h3{
+.service h3 {
   font-size: 25px;
   line-height: 35px;
   font-weight: 600;
 }
 
-.service p{
+.service p {
   margin-top: 15px;
   font-size: 14px;
   font-weight: 500;
@@ -151,13 +155,13 @@ nav ul li a:hover::after, .active::after {
   animation: fadeInUp 1.2s ease-in-out;
 }
 
-.service1 h3{
+.service1 h3 {
   font-size: 25px;
   line-height: 35px;
   font-weight: 600;
 }
 
-.service1 p{
+.service1 p {
   margin-top: 15px;
   font-size: 14px;
   font-weight: 500;
@@ -180,13 +184,13 @@ nav ul li a:hover::after, .active::after {
   animation: fadeInLeft 1.2s ease-in-out;
 }
 
-.service2 h3{
+.service2 h3 {
   font-size: 25px;
   line-height: 35px;
   font-weight: 600;
 }
 
-.service2 p{
+.service2 p {
   margin-top: 15px;
   font-size: 14px;
   font-weight: 500;
@@ -198,52 +202,208 @@ nav ul li a:hover::after, .active::after {
   margin-top: 17px;
 }
 
+.line {
+  width: 3px;
+  height: 50px;
+  margin-left: 30px;
+  margin-right: 20px;
+  background-color: white;
+}
+
+.aboutUs-content {
+  width: 100vw;
+  height: 20%;
+  display: flex;
+  padding: 20px 10px;
+  background-color: #2d88f2;
+}
+
+.what-is {
+  display: flex;
+  align-items: center;
+  animation: fadeInLeft linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+.aboutUs-text {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  justify-content: center;
+  animation: fadeInLeft linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+.aboutUs-logo {
+  display: flex;
+  align-items: center;
+  margin: 0 180px;
+  animation: fadeInLeft linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+.aboutUs-logo img {
+  width: 170px;
+}
+
+.Nano-Is {
+  width: 330px;
+  height: 250px;
+  color: #fff;
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+  font-family: "poppins";
+  animation: fadeInLeft linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+.Project h1 {
+  font-size: 50px;
+  font-family: "poppins";
+  text-align: center;
+  margin-bottom: 140px;
+  animation: muncul linear;
+  animation-timeline: view();
+  animation-range: entry 10% cover 30%;
+}
+
+.card-1 img,
+.card-2 img {
+  width: 375px;
+  border: 3px solid #2d88f2;
+  border-radius: 15px;
+}
+.card-1 img {
+  padding: 65px 10px;
+}
+
+.card-2 img {
+  padding: 3px 0;
+  background-color: #2d88f2;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-1,
+.card-2 {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: muncul linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+.card-1 h3,
+.card-2 h3 {
+  font-size: 30px;
+}
+
+.title-card-1,
+.title-card-2 {
+  text-align: center;
+  margin-top: -40px;
+  box-shadow: 0 10px 40px rgba(93, 92, 92, 0.805);
+}
+
+.title-card-1 {
+  width: 300px;
+  padding: 20px 20px;
+  border-radius: 10px;
+  background-color: #2d88f2;
+  transition: all 1s;
+  color: #fff;
+}
+
+.title-card-2 {
+  width: 300px;
+  padding: 20px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: all 1s;
+  color: #2d88f2;
+}
+
+.card-1:hover {
+  .title-card-1 {
+    margin-top: 10px;
+  }
+}
+.card-2:hover {
+  .title-card-2 {
+    margin-top: 10px;
+  }
+}
+
+/* keyframes settings */
 
 @keyframes underline {
   from {
-      width: 0%;
+    width: 0%;
   }
   to {
-      width: 100%;
+    width: 100%;
   }
 }
 @keyframes fadeInDown {
   0% {
-      opacity: 0;
-      transform: translateY(-40px);
+    opacity: 0;
+    transform: translateY(-40px);
   }
   100% {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 @keyframes fadeInUp {
   0% {
-      opacity: 0;
-      transform: translateY(40px);
+    opacity: 0;
+    transform: translateY(40px);
   }
   100% {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 @keyframes fadeInRight {
   0% {
-      opacity: 0;
-      transform: translateX(-40px);
+    opacity: 0;
+    transform: translateX(-40px);
   }
   100% {
-      opacity: 1;
-      transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 @keyframes fadeInLeft {
   0% {
-      opacity: 0;
-      transform: translateX(40px);
+    opacity: 0;
+    transform: translateX(40px);
   }
   100% {
-      opacity: 1;
-      transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes muncul {
+  from {
+    opacity: 0;
+    scale: 0.8;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
   }
 }
