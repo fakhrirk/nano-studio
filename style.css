@@ -336,7 +336,7 @@ nav ul li a:hover::after,
   position: absolute;
   text-align: center;
   margin-top: 170px;
-  box-shadow: 0 10px 40px rgba(93, 92, 92, 0.805);
+  box-shadow: 0 0 15px rgba(93, 92, 92, 0.5);
 }
 
 .title-card-1 {
