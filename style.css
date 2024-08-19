@@ -346,6 +346,10 @@ nav ul li a:hover::after,
   background-color: #2d88f2;
   transition: all 1s;
   color: #fff;
+  cursor: pointer;
+  background-image: linear-gradient(-60deg, #ffffff00 0%, #ffffff00 40%, #ffffff44 40%, #ffffff44 60%, #ffffff00 60%, #ffffff00 100%);
+  background-size: 200% 100%;
+  background-position-x: 150%;
 }
 
 .title-card-2 {
@@ -355,16 +359,22 @@ nav ul li a:hover::after,
   background-color: #fff;
   transition: all 1s;
   color: #2d88f2;
+  cursor: pointer;
+  background-image: linear-gradient(-60deg, #ffffff00 0%, #ffffff00 40%, #86c8ff33 40%, #86c8ff33 60%, #ffffff00 60%, #ffffff00 100%);
+  background-size: 200% 100%;
+  background-position-x: 150%;
 }
 
 .card-1:hover {
   .title-card-1 {
     margin-top: 220px;
+    animation: shimmer 1s forwards;
   }
 }
 .card-2:hover {
   .title-card-2 {
     margin-top: 220px;
+    animation: shimmer 1s forwards;
   }
 }
 
@@ -400,6 +410,7 @@ nav ul li a:hover::after,
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  cursor: pointer;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -410,6 +421,7 @@ nav ul li a:hover::after,
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
+  cursor: pointer;
   transition: all 0.7s;
   border: #2d88f2 0.3px solid;
 }
@@ -461,16 +473,19 @@ nav ul li a:hover::after,
 .dev-card h3 {
   margin-top: 40px;
   font-size: 22px;
+  cursor: pointer;
   font-weight: 700;
 }
 .dev-card p {
   font-size: 14px;
   color: #666;
+  cursor: pointer;
   margin: 10px 0 20px;
 }
 .dev-card h4 {
   font-size: 1em;
   color: #008cba;
+  cursor: pointer;
   font-weight: normal;
 }
 
@@ -533,5 +548,14 @@ nav ul li a:hover::after,
   to {
     opacity: 1;
     scale: 1;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position-x: 150%;
+  }
+  100% {
+    background-position-x: -50%;
   }
 }
